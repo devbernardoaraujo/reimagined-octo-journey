@@ -1,0 +1,25 @@
+# Ambientes Virtuais
+venv/
+.env/
+
+# Arquivos gerados durante o treinamento
+runs/
+*.pt  # Pesos treinados (se não quiser compartilhar)
+
+# Arquivos de log e checkpoints
+*.log
+*.ckpt
+
+# Arquivos temporários do sistema
+*.pyc
+__pycache__/
+*.DS_Store
+
+# Configurações locais de IDE
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Dados confidenciais ou locais
+*.yaml  # Apenas se contiver informações sensíveis (como caminhos locais)
+dataset/

@@ -1,0 +1,16 @@
+# Caminho para os dados
+train: C:\Users\berna\Documents\vigiabrasil\dataset\guns\train
+val: C:\Users\berna\Documents\vigiabrasil\dataset\guns\val
+test: C:\Users\berna\Documents\vigiabrasil\dataset\guns\test
+
+nc: 1
+names: ['pistola']
+
+roboflow:
+  workspace: proyecto-p4lkf
+  project: pistolas-mqk5c
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/proyecto-p4lkf/pistolas-mqk5c/dataset/2
+
+
