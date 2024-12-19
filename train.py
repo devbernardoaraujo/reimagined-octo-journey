@@ -17,20 +17,20 @@ def train_yolo(data_yaml, weights, epochs, batch_size, img_size=640):
     
     # Treina o modelo
     model.train(
-    data=data_yaml,  # Caminho do arquivo YAML
+    data=data_yaml,  # instancia para o caminho do arquivo daya
     epochs=300,
-    batch=8,  # Utilizando o batch_size passado para a função
+    batch=8, 
     imgsz=640,
-    device=0 # Use 0 para a primeira GPU, ou substitua pelo índice da sua GPU
+    device=0 # gpu usadas
 )
 
 if __name__ == "__main__":
     # Configurações do treinamento
-    data_yaml = "data.yaml"      # Caminho para seu arquivo armas.yaml
-    weights = "yolov8n.pt"        # Pesos pré-treinados do YOLOv8 (baixe no site oficial se necessário)
-    epochs = 300                  # Número de épocas
+    data_yaml = "data.yaml"      # caminho para data.yaml
+    weights = "yolov8n.pt"        # Pesos pré-treinados do YOLOv8 
+    epochs = 300                  # Número de épocas (quantidade de treinos)
     batch_size = 4                # Tamanho do batch
-    img_size = 640                # Resolução das imagens (default)
+    img_size = 640                # Resolução das imagens (default do proprio yolo)
 
     # Inicia o treinamento
     train_yolo(data_yaml, weights, epochs, batch_size, img_size)
